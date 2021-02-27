@@ -1,0 +1,122 @@
+// Clean CSS
+@import "clean";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+// Vars
+	// Colors
+		$mainColor: #404041;
+		$secondColor: #868686;
+		$bgColor: #ffffff;
+		$bottomGradient1: #2262b9;
+		$bottomGradient2: #2ab7fa;
+		$bottomTextColor: #ffffff;
+	//Font sizes
+		$mainText: 9.4rem;
+		$secondText: 2.5rem;
+		$bottomText: 3rem;
+
+// Style
+
+html {
+	font-size: 7px;
+
+	body {
+		background-color: $bgColor;
+		font-family: 'Open Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+	
+		.container {
+			width: 90%;
+			margin: 0 auto;
+	
+			header {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				align-items: center;
+				height: 13.2rem;
+
+				a {
+					img {
+						width: 22.5rem;
+						display: inline-block;
+						margin: 2.1rem 0;
+					}
+				}
+	
+				nav {
+					display: flex;
+					text-align: center;
+	
+					ul {
+						display: flex;
+						flex-wrap: wrap;
+	
+						li {
+							margin-left: 8rem;
+							text-align: center;
+	
+							a {
+								font-size: $secondText;
+								color: $secondColor;
+								display: inline-block;
+								height: 6.5rem;
+								line-height: 6.5rem;
+							}
+						}
+					}
+					.bottom {
+						background: linear-gradient(323.15deg, $bottomGradient1 -116.82%, $bottomGradient2 149.41%);
+						height: 6.5rem;
+						line-height: 6.5rem;
+						width: 22rem;
+						margin-left: 8rem;
+						
+					}
+				}
+			}
+			main {
+				.content {
+					text-align: center;
+	
+					img {
+						width: 65%;
+					}
+					h1 {
+						font-size: $mainText;
+						font-weight: 700;
+						color: $mainColor;
+						line-height: 11.4rem;
+						margin-top: 1.2rem;
+					}
+					p {
+						font-size: $secondText;
+						color: $secondColor;
+						line-height: 4.4rem;
+						margin-top: 1.2rem;
+					}
+					.bottom {
+						background: linear-gradient(138.53deg, $bottomGradient2 -32.83%, $bottomGradient1 190.72%);
+						height: 9rem;
+						line-height: 9rem;
+						width: 30rem;
+						margin: 3.5rem 7rem;
+					}
+				}
+			}
+			.bottom {
+				display: inline-block;
+				color: $bottomTextColor;
+				font-size: $bottomText;
+				border-radius: 4.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+// Media
+@import "media";
